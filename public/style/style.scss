@@ -1,0 +1,48 @@
+body{
+width: 650px;
+margin: auto;
+background-color: gray;
+height: 100vh;
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    cursor: pointer;
+    li{
+        list-style-type: none;
+        
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: #222;
+        }
+    }
+}
+p{
+    text-transform: capitalize;
+font-size: 15px;
+margin-left: 150px;
+margin-top: 100px;
+letter-spacing: 1px;
+}
+}
+footer{
+    background-color: #222;
+   position: absolute;
+   padding: 20px;
+   width: 50%;
+   bottom: 0;
+   text-align: center;
+   color: #fff;
+}
+h1{
+    text-transform: capitalize;
+}
