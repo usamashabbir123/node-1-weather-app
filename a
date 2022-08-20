@@ -1,0 +1,12 @@
+[1mdiff --git a/http.js b/http.js[m
+[1mindex 2ba8b83..a2c6cd0 100644[m
+[1m--- a/http.js[m
+[1m+++ b/http.js[m
+[36m@@ -20,7 +20,6 @@[m [mapp.get("", (req, res) => {[m
+     name: "usama",[m
+   });[m
+ });[m
+[31m-// console.log(__dirname+ "../template");[m
+ app.get("/about", (req, res) => {[m
+   res.render("about", {[m
+     tittle: "this is about page",[m

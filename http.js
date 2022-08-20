@@ -9,6 +9,7 @@ const hbs = require("hbs");
 app.set("view engine", "hbs");
 const newpath = path.join(__dirname + "/template/views");
 const publicDir = path.join(__dirname + "/public");
+const port=process.env.PORT || 3000;
 app.use(express.static(publicDir));
 app.set("views", newpath);
 const PartialDir = path.join(__dirname, "/template");
@@ -56,6 +57,6 @@ app.get("*", (req, res) => {
     name: "usama",
   });
 });
-app.listen(3000, () => {
-  console.log("app is running at 3000");
+app.listen(port, () => {
+  console.log("app is running at "+port);
 });
